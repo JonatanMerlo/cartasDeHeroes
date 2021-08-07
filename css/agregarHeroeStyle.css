@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.barraDescuento{
+    background-color: #1CD1B0;
+    color: black;
+    padding: 10px 0px 10px 10px;
+    
+}
+
+.barraDescuento{
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.nombreTienda{
+    display: flex;
+    align-items: center;
+    padding: 28px 0px 26px 28px;
+    background-color: #00669F;
+    color: white;
+}
+
+.nombreTienda p{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.barraDeRelacion{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    box-shadow: 0px 7px 3px 0px gray;
+
+}
+
+.barraDeRelacion ul{
+    display: flex;
+}
+
+.barraDeRelacion ul li{
+    padding: 10px 20px 10px 0px;
+}
+
+.barraDeRelacion ul li a{
+    color: white;
+}
+
+/* -------------------------------- MAIN ------------------------------- */
+
+.agregarHeroe{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+    width: 954px;
+    Height: auto;
+    margin: 20px 0px 24px 0px;
+    background-color: #00669F;
+    border-radius: 50px;
+    color: white;
+}
+
+.agregarHeroe h1{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 72px;   
+}
+
+.agregarHeroe p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+[for="nombre"], [for="Especie"], [for="Fecha"], [for="agregarFoto"]{
+    margin-bottom: 15px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px
+}
+
+#Fecha {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+[for="Fecha"], .nombreFechaTexto textarea, [for="agregarFoto"]{
+    margin-top: 30px;
+}
+
+.nombreFechaTexto textarea{
+    padding: 20px 13px 33px 10px;
+    border-radius: 15px;
+    height: 270px;
+    resize: none;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.nombreFechaTexto input, .especiaFotoTipo select {
+    padding: 20px 0px 24px 10px;
+    border-radius: 15px;
+}
+
+.agregarHeroeForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todosLosDatos{
+    display: flex;
+}
+
+.nombreFechaTexto{
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+}
+
+.especiaFotoTipo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 23px;
+    width: 342px;
+}
+
+input[type="file"]{          
+    display: none;
+}
+
+input[type="file"] + label{          
+    content: "";
+    background-color: #CECECE;
+    color: black;
+    display: inline-block;
+    padding: 8px 92px 8px 9px;
+    border: 1px solid rgb(187, 186, 186);
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 5px; 
+    position: relative;
+    top: -8px;
+}
+
+.agregarArchivo{
+    height: 62px;
+}
+
+.agregarArchivo span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: black;
+}
+
+.especiaFotoTipo .agregarArchivo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poderes{
+    margin-top: 30px;
+}
+
+.poderes div{
+    /* display: flex; */
+    height: 26px;
+    margin-top: 13px;
+
+    /* aldign-items: center; */
+}
+
+.divCheckBox .divRadio{
+    position: relative;
+}
+
+
+
+input[type="checkbox"], input[type="radio"]{
+    display: none;
+}
+
+input[type="checkbox"] + label{
+    position: relative;
+    padding-left: 40px;
+}
+
+input[type="radio"] + label{
+    position: relative;
+    padding-left: 38px;
+}
+
+input[type="checkbox"] + label::before{
+    content: "";
+    width: 24px;
+    height: 20px;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #C4C4C4;
+    /* margin-right: 8px;  */
+    position: absolute;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+
+input[type="checkbox"]:checked + label::before{
+    content: "\f00c ";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+    background-color: #34CEFF;
+    text-align: center;  
+    color: white; 
+    
+} 
+
+input[type="radio"] + label::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #C4C4C4;
+    /* margin-right: 8px;  */
+    position: absolute;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+input[type="radio"]:checked + label::before{
+    content: "\f111";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    text-align: center;
+    width: 20px;
+    height: 20px; 
+    background-color: white;
+    color: #34CEFF;
+    border: 1px solid #34CEFF;
+    
+} 
+
+.poderes h2, .tipoPersonaje h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    
+}
+
+.poderes label, .tipoPersonaje label{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.tipoPersonaje{
+    display: flex;
+    flex-direction: column;
+}
+
+.tipoPersonaje div{
+    margin-top: 12px;
+}
+
+
+
+hr{
+    margin: 34px 0px 21px 0px;
+    color: white;
+}
+
+.button{
+    margin-top: 45px;
+    margin-bottom: 12px;
+}
+
+.button input{
+    width: 466px;
+    height: 87px;
+    border-radius: 23px;
+    background-color: #1CD1B0;
+    border: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.button input:active{
+    background-color:#001D2D;
+    color: white;
+}
+
+
+/* --------------------------- FOOTER---------------------- */
+
+footer div p{
+    display: block;
+    background: #00669F;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 21px 0px;
+
+}
+

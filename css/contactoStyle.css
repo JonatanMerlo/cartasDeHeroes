@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.barraDescuento{
+    background-color: #1CD1B0;
+    color: black;
+    padding: 10px 0px 10px 10px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+.nombreTienda{
+    display: flex;
+    align-items: center;
+    padding: 28px 0px 26px 28px;
+    background-color: #00669F;
+}
+
+.nombreTienda p{
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+}
+
+.barraDeRelacion{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    box-shadow: 0px 7px 3px 0px gray;
+
+}
+
+.barraDeRelacion ul{
+    display: flex;
+}
+
+.barraDeRelacion ul li{
+    padding: 10px 20px 10px 0px;
+}
+
+.barraDeRelacion ul li a{
+    color: white;
+}
+
+/* -------------------------------- MAIN ------------------------------- */
+
+.login{
+    display: flex;
+    flex-direction: column;
+    Width: 621.12px;
+    Height: auto;
+    margin: 230px 0px 294px 0px;
+    overflow:inherit;
+
+}
+
+.login h1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+    
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.loginForm input {
+    height: 60px;
+    font-family: karla;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.loginForm textarea {
+    margin-top: 25px;
+    font-family: karla;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.loginForm label{
+    font-family: karla;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.loginForm label[for="pass"]{
+    margin-top: 15px;
+}
+
+.loginForm div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginForm div input[type="button"]{
+    margin-top: 59px;
+    height: 58px;
+    border-radius: 25px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    cursor: pointer;
+    width: 49%;
+}
+
+.loginForm label[for="email"]{
+    margin-top: 10px;
+}
+
+.loginForm div input[value="Registrar"]{
+    background-color: #1CD1B0;
+}
+
+.loginForm div input[value="Resetear"]{
+    background-color:#888888;
+    color: white;
+}
+
+.login p{
+    text-align: center;
+    font-family: karla;
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+/* --------------------------- FOOTER---------------------- */
+
+footer div p{
+    display: block;
+    background: #00669F;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 21px 0px;
+
+}
